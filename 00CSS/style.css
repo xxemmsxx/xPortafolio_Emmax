@@ -24,16 +24,27 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Bimbo";
+  src: url(/00ASSETS/font/Bimbo/Bimbo\ Whiteboard\ Trial.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
 /* ------------------------------------------------------------------------------------- */
 /* ------------------------ */
 /* ★ ESTILO DE TIPOGRAFIAS ★ */
 /* ------------------------ */
+.bimbo {
+  font-family: "Bimbo";
+}
+
 .titulo {
   font-size: 24px;
   font-family: "Poppins";
 }
 .subtitulo {
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Poppins";
 }
 .parrafo {
@@ -156,9 +167,9 @@ footer {
   padding-right: 32px;
 }
 
-/* @@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 /* ★ INICIO // PRESENTACIÓN ★ */
-/* @@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 .presentacion {
   display: flex;
   flex-direction: column;
@@ -194,7 +205,7 @@ footer {
   background-color: #340773;
   color: white;
   text-align: center;
-  padding: 12px;
+  padding: 8px;
   border-radius: 40px;
   font-family: "Poppins";
   text-decoration: none;
@@ -204,17 +215,17 @@ footer {
 .boton01:hover {
   background-color: #d96690;
   color: white;
+  border: none;
 }
 
 .boton02 {
   border: 1px solid #340773;
   color: #340773;
   text-align: center;
-  padding: 12px;
+  padding: 8px;
   border-radius: 40px;
   font-family: "Poppins";
   text-decoration: none;
-  margin: 0;
 }
 
 .boton02:hover {
@@ -237,7 +248,7 @@ footer {
   }
 
   .subtitulo {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .parrafo {
@@ -248,11 +259,11 @@ footer {
 /* ★ DESKTOP ★ */
 @media (min-width: 1024px) {
   .titulo {
-    font-size: 28px;
+    font-size: 30px;
   }
 
   .subtitulo {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .parrafo {
@@ -356,6 +367,37 @@ footer {
     margin-bottom: 16px;
   }
 }
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* ★ INICIO // BANNER ★ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.banner-intro {
+  padding: 100px 24px;
+  text-align: center;
+  position: relative;
+}
+
+.contenido-banner {
+  max-width: 400px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 40px;
+}
+
+.banner-intro .star {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bimbo {
+  display: block;
+  font-size: 24px;
+  color: #3f0071;
+  margin-top: 4px;
+}
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@ */
 /* ★ INICIO // PRESENTACIÓN ★ */
@@ -397,7 +439,7 @@ footer {
   }
 
   .yoemmayo {
-    max-width: 340px;
+    width: 348px;
     height: auto;
     border-radius: 20px;
   }
@@ -405,21 +447,68 @@ footer {
   .botones-inicio a {
     width: auto;
   }
+
+  .botones-inicio a {
+    flex: 1;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 16px;
+    white-space: nowrap;
+  }
+
+  .botones-inicio a {
+    flex: 1;
+    text-align: center;
+  }
 }
 
 /* ★ DESKTOP ★ */
 
 @media (min-width: 1024px) {
   .presentacion {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    grid-template-areas:
+      "texto imagen"
+      "botones imagen";
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 40px 120px;
-    gap: 24px;
+    gap: 40px;
   }
 
   .yoemmayo {
     max-width: 400px;
+    height: auto;
+  }
+
+  .texto-intro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    grid-area: texto;
+  }
+
+  .botones-inicio {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    margin-top: 24px;
+    grid-area: botones;
   }
 
   .botones-inicio a {
+    flex: 1;
+    text-align: center;
     font-size: 16px;
+    padding: 12px 0;
+  }
+
+  .imagen-intro {
+    grid-area: imagen;
+    display: flex;
+    justify-content: center;
   }
 }
