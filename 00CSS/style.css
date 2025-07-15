@@ -168,6 +168,78 @@ footer {
 }
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* ★ INICIO // BANNER ★ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.banner-intro {
+  padding: 100px 24px;
+  text-align: center;
+  position: relative;
+}
+
+.contenido-banner {
+  max-width: 400px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 40px;
+}
+
+.banner-intro .star {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bimbo {
+  display: block;
+  font-size: 24px;
+  color: #3f0071;
+  margin-top: 4px;
+}
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* ★ INICIO // lISTON ★ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.tira-servicios {
+  overflow: hidden;
+  background-color: #340773;
+  padding: 4px;
+}
+
+.tira-scroll {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-horizontal 25s linear infinite;
+  margin: 0 24px;
+}
+
+.tira-scroll li {
+  display: inline-block;
+  margin: 0 20px;
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+  position: relative;
+}
+
+.tira-scroll li::after {
+  content: "✦";
+  margin-left: 24px;
+  color: white;
+}
+
+/* Animación */
+@keyframes scroll-horizontal {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 /* ★ INICIO // PRESENTACIÓN ★ */
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 .presentacion {
@@ -233,9 +305,10 @@ footer {
   color: white;
   border: none;
 }
-/* ------------------------------------------------------------------------------------- */
 
-/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 /* ------------------------ */
 /* ★ ESTILO DE TIPOGRAFIAS ★ */
@@ -367,41 +440,64 @@ footer {
     margin-bottom: 16px;
   }
 }
-/* @@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 /* ★ INICIO // BANNER ★ */
-/* @@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* ★ TABLET ★ */
+@media (min-width: 768px) {
+  .bannerfont {
+    font-size: 28px;
+  }
+
+  .bimbo {
+    font-size: 40px;
+    margin-top: 8px;
+  }
+}
+
 .banner-intro {
-  padding: 100px 24px;
-  text-align: center;
-  position: relative;
+  padding: 120px 48px;
 }
 
 .contenido-banner {
-  max-width: 400px;
-  margin: 0 auto;
-  position: relative;
-  padding-top: 40px;
+  max-width: 600px;
 }
 
 .banner-intro .star {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: -12px;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 24px;
+  height: 24px;
+  top: -16px;
 }
 
-.bimbo {
-  display: block;
-  font-size: 24px;
-  color: #3f0071;
-  margin-top: 4px;
+/* ★ DESKTOP ★ */
+@media (min-width: 1024px) {
+  .bannerfont {
+    font-size: 40px;
+  }
+
+  .bimbo {
+    font-size: 50px;
+    margin-top: 12px;
+  }
+
+  .banner-intro {
+    padding: 160px 80px;
+  }
+
+  .contenido-banner {
+    max-width: 800px;
+  }
+
+  .banner-intro .star {
+    width: 28px;
+    height: 28px;
+    top: -20px;
+  }
 }
 
-/* @@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 /* ★ INICIO // PRESENTACIÓN ★ */
-/* @@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 /* ★ TABLET ★ */
 @media (min-width: 768px) {
