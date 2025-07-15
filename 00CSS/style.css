@@ -1,0 +1,425 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* ------------------------ */
+/*FUENTES PERSONALIZADAS */
+/* ------------------------ */
+@font-face {
+  font-family: "Poppins";
+  src: url(/assets/font/Poppins/Poppins-Bold.ttf);
+  font-weight: bold;
+  font-style: bold;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(/assets/font/Poppins/Poppins-Thin.ttf);
+  font-weight: 100;
+  font-style: lighter;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(/assets/font/Poppins/Poppins-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+/* ------------------------------------------------------------------------------------- */
+/* ------------------------ */
+/* ★ ESTILO DE TIPOGRAFIAS ★ */
+/* ------------------------ */
+.titulo {
+  font-size: 24px;
+  font-family: "Poppins";
+}
+.subtitulo {
+  font-size: 18px;
+  font-family: "Poppins";
+}
+.parrafo {
+  font-size: 14px;
+  font-family: "Poppins";
+}
+
+/* ★ PESOS DE TIPOGRAFIAS ★ */
+.bold {
+  font-weight: bold;
+}
+
+.light {
+  font-weight: lighter;
+}
+
+.normal {
+  font-weight: normal;
+}
+
+/* ★ COLORES ★ */
+.primary01 {
+  color: #340773;
+}
+
+.primary02 {
+  color: #583bbf;
+}
+
+.secundary03 {
+  color: #d96690;
+}
+
+/* ------------------------ */
+/* ★ HEADER ★ */
+/* ------------------------ */
+.navbar .container-fluid {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+/*  LOGO  */
+.logo {
+  width: 140px !important;
+  height: auto !important;
+}
+
+/*  MENU HAMBURGUESA  */
+.navbar-toggler {
+  border: none !important;
+  box-shadow: none !important;
+  padding: 4px 8px;
+}
+
+.navbar-toggler-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.navbar-toggler:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/*  NAVBARLINKS  */
+.navbarlinks {
+  font-family: "Poppins";
+  font-weight: normal;
+  font-size: 14px;
+  color: #340773;
+  text-decoration: none;
+}
+
+.navbarlinks:hover {
+  color: #d96690;
+}
+
+.navbarlinkseleccion {
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 14px;
+  color: #583bbf;
+  text-decoration: none;
+}
+
+.navbarlinkseleccion:hover {
+  color: #d96690;
+}
+
+/* ------------------------ */
+/* FOOTER */
+/* ------------------------ */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e4d0ff;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.star {
+  width: 20px;
+  height: 20px;
+}
+
+.footernavbar {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.footerp {
+  font-family: "Poppins";
+  font-weight: normal;
+  font-size: 14px;
+  color: #340773;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* ★ INICIO // PRESENTACIÓN ★ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.presentacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  gap: 24px;
+}
+
+.texto-intro {
+  text-align: left;
+  background-color: #f3f4f4;
+  border-radius: 20px;
+  padding: 24px;
+  width: 100%;
+}
+
+.yoemmayo {
+  width: 280px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.botones-inicio {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.boton01 {
+  background-color: #340773;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  border-radius: 40px;
+  font-family: "Poppins";
+  text-decoration: none;
+  margin: 0;
+}
+
+.boton01:hover {
+  background-color: #d96690;
+  color: white;
+}
+
+.boton02 {
+  border: 1px solid #340773;
+  color: #340773;
+  text-align: center;
+  padding: 12px;
+  border-radius: 40px;
+  font-family: "Poppins";
+  text-decoration: none;
+  margin: 0;
+}
+
+.boton02:hover {
+  background-color: #d96690;
+  color: white;
+  border: none;
+}
+/* ------------------------------------------------------------------------------------- */
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* ------------------------ */
+/* ★ ESTILO DE TIPOGRAFIAS ★ */
+/* ------------------------ */
+
+/* ★ TABLET ★ */
+@media (min-width: 768px) {
+  .titulo {
+    font-size: 24px;
+  }
+
+  .subtitulo {
+    font-size: 16px;
+  }
+
+  .parrafo {
+    font-size: 14px;
+  }
+}
+
+/* ★ DESKTOP ★ */
+@media (min-width: 1024px) {
+  .titulo {
+    font-size: 28px;
+  }
+
+  .subtitulo {
+    font-size: 24px;
+  }
+
+  .parrafo {
+    font-size: 16px;
+  }
+}
+
+/* ------------------------ */
+/* ★ HEADER ★ */
+/* ------------------------ */
+
+/* ★ TABLET ★ */
+
+/*  LOGO  */
+@media (min-width: 768px) {
+  .logo {
+    width: 180px !important;
+  }
+}
+
+/*  MENU HAMBURGUESA  */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .navbar-toggler-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/*  TIPOGRAFIA  */
+@media (min-width: 768px) {
+  .navbarlinks {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbarlinkseleccion {
+    font-size: 17px;
+  }
+}
+
+/* ★ DESKTOP ★ */
+
+/*  LOGO  */
+@media (min-width: 1024px) {
+  .logo {
+    width: 225px !important;
+  }
+}
+
+/*  TIPOGRAFIA  */
+@media (min-width: 1024px) {
+  .navbarlinks {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbarlinkseleccion {
+    font-size: 18px;
+  }
+}
+
+/* ------------------------ */
+/* ★ FOOTER ★ */
+/* ------------------------ */
+
+/* ★ TABLET ★ */
+@media (min-width: 768px) {
+  .footernavbar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .footerp {
+    font-size: 15px;
+    max-width: 600px;
+  }
+
+  .star {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* ★ DESKTOP ★ */
+@media (min-width: 1024px) {
+  .footernavbar {
+    gap: 32px;
+  }
+
+  .footerp {
+    font-size: 16px;
+  }
+
+  .star {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 16px;
+  }
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* ★ INICIO // PRESENTACIÓN ★ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* ★ TABLET ★ */
+@media (min-width: 768px) {
+  .presentacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "texto imagen"
+      "botones imagen";
+    align-items: center;
+    padding: 40px 80px;
+    gap: 32px;
+  }
+
+  .texto-intro {
+    grid-area: texto;
+    background-color: transparent;
+    padding: 0;
+    width: 100%;
+  }
+
+  .imagen-intro {
+    grid-area: imagen;
+    display: flex;
+    justify-content: center;
+    align-self: start;
+  }
+
+  .botones-inicio {
+    grid-area: botones;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+
+  .yoemmayo {
+    max-width: 340px;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .botones-inicio a {
+    width: auto;
+  }
+}
+
+/* ★ DESKTOP ★ */
+
+@media (min-width: 1024px) {
+  .presentacion {
+    padding: 40px 120px;
+    gap: 24px;
+  }
+
+  .yoemmayo {
+    max-width: 400px;
+  }
+
+  .botones-inicio a {
+    font-size: 16px;
+  }
+}
