@@ -78,6 +78,10 @@
   color: #d96690;
 }
 
+.secundary04 {
+  color: white;
+}
+
 /* ------------------------ */
 /* ★ HEADER ★ */
 /* ------------------------ */
@@ -109,8 +113,8 @@
   box-shadow: none !important;
 }
 
-/*  NAVBARLINKS  */
-.navbarlinks {
+/*  NAVBARLINKS FOOTER  */
+.navbarlinks1 {
   font-family: "Poppins";
   font-weight: normal;
   font-size: 14px;
@@ -118,19 +122,19 @@
   text-decoration: none;
 }
 
-.navbarlinks:hover {
+.navbarlinks1:hover {
   color: #d96690;
 }
 
-.navbarlinkseleccion {
+.navbarlinkseleccion1 {
   font-family: "Poppins";
   font-weight: bold;
   font-size: 14px;
-  color: #583bbf;
+  color: #340773;
   text-decoration: none;
 }
 
-.navbarlinkseleccion:hover {
+.navbarlinkseleccion1:hover {
   color: #d96690;
 }
 
@@ -141,7 +145,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #e4d0ff;
+  background-color: #340773;
   text-align: center;
   padding-top: 20px;
 }
@@ -162,9 +166,34 @@ footer {
   font-family: "Poppins";
   font-weight: normal;
   font-size: 14px;
-  color: #340773;
+  color: white;
   padding-left: 32px;
   padding-right: 32px;
+}
+
+/*  NAVBARLINKS FOOTER  */
+.navbarlinks {
+  font-family: "Poppins";
+  font-weight: normal;
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbarlinks:hover {
+  color: #d96690;
+}
+
+.navbarlinkseleccion {
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbarlinkseleccion:hover {
+  color: #d96690;
 }
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
@@ -246,7 +275,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 24px;
+  padding: 40px;
   gap: 24px;
 }
 
@@ -306,6 +335,76 @@ footer {
   border: none;
 }
 
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* ★ SERVICIOS ★ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.servicio-descripcion,
+.descripcion-portafolio {
+  text-align: center;
+  padding: 24px 16px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.servicio-descripcion .star {
+  display: block;
+  margin: 0 auto 16px auto; /* ← centrada + espacio abajo */
+  width: 24px;
+  height: 24px;
+}
+
+/* Contenedor de todas las cards (ya lo usas como section directamente) */
+section > .servicio {
+  background-color: #f8f9fa;
+  border-radius: 16px;
+  padding: 24px;
+  margin: 20px 30px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* Iconos centrados */
+.icono_servicios {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 16px;
+}
+
+/* Título alineado al centro */
+.servicio h2 {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+/* Descripción alineada a la izquierda */
+.servicio .descripcion-portafolio {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+/* Botón centrado */
+.boton-servicio {
+  background-color: #340773;
+  color: white;
+  border-radius: 40px;
+  font-family: "Poppins";
+  padding: 10px 24px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  display: inline-block;
+  align-self: flex-start; /* ← Añade esto */
+  margin-top: 16px; /* Opcional: espacio entre texto y botón */
+  width: 100%;
+}
+
+.boton-servicio:hover {
+  background-color: #d96690;
+  color: white;
+}
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
@@ -367,13 +466,13 @@ footer {
 
 /*  TIPOGRAFIA  */
 @media (min-width: 768px) {
-  .navbarlinks {
+  .navbarlinks1 {
     font-size: 17px;
   }
 }
 
 @media (min-width: 768px) {
-  .navbarlinkseleccion {
+  .navbarlinkseleccion1 {
     font-size: 17px;
   }
 }
@@ -389,13 +488,13 @@ footer {
 
 /*  TIPOGRAFIA  */
 @media (min-width: 1024px) {
-  .navbarlinks {
+  .navbarlinks1 {
     font-size: 18px;
   }
 }
 
 @media (min-width: 1024px) {
-  .navbarlinkseleccion {
+  .navbarlinkseleccion1 {
     font-size: 18px;
   }
 }
@@ -508,7 +607,7 @@ footer {
       "texto imagen"
       "botones imagen";
     align-items: center;
-    padding: 40px 80px;
+    padding: 100px 80px;
     gap: 32px;
   }
 
@@ -571,7 +670,7 @@ footer {
     justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 40px 120px;
+    padding: 100px 120px;
     gap: 40px;
   }
 
@@ -606,5 +705,54 @@ footer {
     grid-area: imagen;
     display: flex;
     justify-content: center;
+  }
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* ★ SERVICIOS ★ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* ★ TABLET ★ */
+@media (min-width: 768px) {
+  .servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    padding: 0 40px;
+    justify-content: center;
+    align-items: stretch; /* Asegura que todas las columnas tengan el mismo alto */
+  }
+
+  .servicios > .servicio {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Mantiene el botón abajo */
+  }
+  .servicio-cierre {
+    margin-top: 48px;
+    text-align: center;
+    padding-bottom: 32px;
+  }
+}
+
+/* ★ DESKTOP ★ */
+@media (min-width: 1024px) {
+  .servicios {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 60px;
+    gap: 40px;
+    align-items: stretch;
+  }
+
+  .servicios > .servicio {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .servicio-cierre {
+    margin-top: 48px;
+    text-align: center;
+    padding-bottom: 32px;
   }
 }
