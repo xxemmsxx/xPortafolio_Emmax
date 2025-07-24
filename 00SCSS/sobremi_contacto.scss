@@ -1,0 +1,127 @@
+// -------------------------------
+// ★ SOBRE MÍ
+// -------------------------------
+.sobre-mi {
+  background-color: #f3f4f4;
+  border-radius: 50px;
+  padding: 40px;
+  margin: 40px auto;
+  max-width: 920px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+
+    li {
+      font-family: "Poppins";
+      font-weight: lighter;
+      font-size: 16px;
+      margin-bottom: 12px;
+      color: #340773;
+    }
+  }
+
+  .sobremitexto {
+    text-align: start;
+    padding: 14px 16px;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}
+
+// -------------------------------
+// ★ CONTACTO
+// -------------------------------
+.formulario-contacto {
+  background-color: #f3f4f4;
+  border-radius: 50px;
+  padding: 40px;
+  margin: 40px auto;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Poppins";
+
+    label {
+      font-weight: bold;
+      color: #340773;
+      font-size: 16px;
+      text-align: left;
+    }
+
+    input,
+    textarea {
+      font-size: 15px;
+      padding: 6px 12px; // ← más delgados
+      border: 2px solid #ccc;
+      border-radius: 20px;
+      font-family: "Poppins";
+      resize: vertical;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #340773;
+      color: white;
+      border: none;
+      border-radius: 40px;
+      padding: 12px 24px;
+      font-size: 17px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #d96690;
+      }
+    }
+  }
+}
+
+// -------------------------------
+// ★ RESPONSIVE
+// -------------------------------
+@media screen and (max-width: 768px) {
+  .sobre-mi {
+    padding: 24px 16px;
+    margin: 20px auto;
+    max-width: 95%;
+
+    ul li {
+      margin-right: 0;
+      font-size: 15px;
+    }
+  }
+
+  .formulario-contacto {
+    padding: 24px 16px;
+    margin: 20px auto;
+    max-width: 95%;
+
+    form {
+      gap: 12px;
+    }
+
+    input,
+    textarea {
+      font-size: 14.5px;
+      padding: 6px 10px; // ← más delgados en mobile también
+    }
+
+    button {
+      font-size: 15px;
+    }
+  }
+}
