@@ -786,6 +786,11 @@ label {
 /* ★ INICIO // BANNER ★ */
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 /* ★ TABLET ★ */
+@media (min-width: 390px) {
+  .bannerfont {
+    font-size: 18px;
+  }
+}
 @media (min-width: 768px) {
   .bannerfont {
     font-size: 28px;
