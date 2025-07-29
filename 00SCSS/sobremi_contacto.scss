@@ -64,13 +64,19 @@
     input,
     textarea {
       font-size: 15px;
-      padding: 6px 12px; // ← más delgados
+      padding: 6px 12px;
       border: 2px solid #ccc;
       border-radius: 20px;
       font-family: "Poppins";
       resize: vertical;
       width: 100%;
       box-sizing: border-box;
+      transition: border-color 0.3s ease;
+
+      &:focus {
+        border: 2px solid #340773 !important;
+        outline: none !important;
+      }
     }
 
     button {
@@ -117,7 +123,12 @@
     input,
     textarea {
       font-size: 14.5px;
-      padding: 6px 10px; // ← más delgados en mobile también
+      padding: 6px 10px;
+
+      &:focus {
+        border: 2px solid #340773 !important;
+        outline: none !important;
+      }
     }
 
     button {

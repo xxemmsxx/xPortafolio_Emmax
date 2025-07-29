@@ -120,6 +120,7 @@
   font-size: 14px;
   color: #340773;
   text-decoration: none;
+  transition: all 0.3s linear;
 }
 
 .navbarlinks1:hover {
@@ -132,6 +133,7 @@
   font-size: 14px;
   color: #340773;
   text-decoration: none;
+  transition: all 0.3s linear;
 }
 
 .navbarlinkseleccion1:hover {
@@ -178,6 +180,7 @@ footer {
   font-size: 14px;
   color: white;
   text-decoration: none;
+  transition: all 0.3s linear;
 }
 
 .navbarlinks:hover {
@@ -190,6 +193,7 @@ footer {
   font-size: 14px;
   color: white;
   text-decoration: none;
+  transition: all 0.3s linear;
 }
 
 .navbarlinkseleccion:hover {
@@ -311,6 +315,7 @@ footer {
   font-family: "Poppins";
   text-decoration: none;
   margin: 0;
+  transition: all 0.3s linear;
 }
 
 .boton01:hover {
@@ -327,6 +332,7 @@ footer {
   border-radius: 40px;
   font-family: "Poppins";
   text-decoration: none;
+  transition: all 0.3s linear;
 }
 
 .boton02:hover {
@@ -399,6 +405,7 @@ section > .servicio {
   align-self: flex-start; /* ← Añade esto */
   margin-top: 16px; /* Opcional: espacio entre texto y botón */
   width: 100%;
+  transition: all 0.3s linear;
 }
 
 .boton-servicio:hover {
@@ -576,6 +583,7 @@ section > .servicio {
   margin-top: 16px;
   position: relative;
   overflow: hidden;
+  transition: all 0.3s linear;
 }
 
 .boton-proyecto:hover {
@@ -1197,4 +1205,40 @@ label {
   main {
     padding-bottom: 100px;
   }
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* ★ Animation ★ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.star_animation {
+  animation: parpadear 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes parpadear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+    transform: scale(1.5);
+  }
+}
+
+.scale_animation {
+  transition: all 0.3s linear;
+}
+
+.scale_animation:hover {
+  transform: scale(1.2);
+}
+
+.scale_proyectos {
+  transition: all 0.3s linear;
+}
+
+.scale_proyectos:hover {
+  transform: scale(1.1);
 }
