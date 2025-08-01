@@ -8,26 +8,26 @@
 /* ------------------------ */
 @font-face {
   font-family: "Poppins";
-  src: url(../00ASSETS/font/Poppins/Poppins-Bold.ttf);
+  src: url(../assets_x/font/Poppins/Poppins-Bold.ttf);
   font-weight: bold;
   font-style: bold;
 }
 @font-face {
   font-family: "Poppins";
-  src: url(../00ASSETS/font/Poppins/Poppins-Thin.ttf);
+  src: url(../assets_x/font/Poppins/Poppins-Thin.ttf);
   font-weight: 100;
   font-style: lighter;
 }
 @font-face {
   font-family: "Poppins";
-  src: url(../00ASSETS/font/Poppins/Poppins-Regular.ttf);
+  src: url(../assets_x/font/Poppins/Poppins-Regular.ttf);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Bimbo";
-  src: url(../00ASSETS/font/Bimbo/BimboWhiteboardTrial.ttf);
+  src: url(../assets_x/font/Bimbo/BimboWhiteboardTrial.ttf);
   font-weight: bold;
   font-style: normal;
 }

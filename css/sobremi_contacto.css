@@ -1,0 +1,128 @@
+.sobre-mi {
+  background-color: #f3f4f4;
+  border-radius: 50px;
+  padding: 40px;
+  margin: 40px auto;
+  max-width: 920px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.sobre-mi ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.sobre-mi ul li {
+  font-family: "Poppins";
+  font-weight: lighter;
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #340773;
+}
+
+.sobre-mi .sobremitexto {
+  text-align: start;
+  padding: 14px 16px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.formulario-contacto {
+  background-color: #f3f4f4;
+  border-radius: 50px;
+  padding: 40px;
+  margin: 40px auto;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.formulario-contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Poppins";
+}
+
+.formulario-contacto form label {
+  font-weight: bold;
+  color: #340773;
+  font-size: 16px;
+  text-align: left;
+}
+
+.formulario-contacto form input,
+.formulario-contacto form textarea {
+  font-size: 15px;
+  padding: 6px 12px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  font-family: "Poppins";
+  resize: vertical;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.formulario-contacto form input:focus,
+.formulario-contacto form textarea:focus {
+  border: 2px solid #340773 !important;
+  outline: none !important;
+}
+
+.formulario-contacto form button {
+  background-color: #340773;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  padding: 12px 24px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-contacto form button:hover {
+  background-color: #d96690;
+}
+
+@media screen and (max-width: 768px) {
+  .sobre-mi {
+    padding: 24px 16px;
+    margin: 20px auto;
+    max-width: 95%;
+  }
+  .sobre-mi ul li {
+    margin-right: 0;
+    font-size: 15px;
+  }
+  .formulario-contacto {
+    padding: 24px 16px;
+    margin: 20px auto;
+    max-width: 95%;
+  }
+  .formulario-contacto form {
+    gap: 12px;
+  }
+  .formulario-contacto input,
+  .formulario-contacto textarea {
+    font-size: 14.5px;
+    padding: 6px 10px;
+  }
+  .formulario-contacto input:focus,
+  .formulario-contacto textarea:focus {
+    border: 2px solid #340773 !important;
+    outline: none !important;
+  }
+  .formulario-contacto button {
+    font-size: 15px;
+  }
+}
+
+
+/*# sourceMappingURL=sobremi_contacto.css.map */
